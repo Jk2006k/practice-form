@@ -23,7 +23,7 @@ const Form = () => {
     e.preventDefault();
     try {
       console.log('Submitting form data:', formData);
-      const response = await axios.post('http://localhost:3000/api/post', formData);
+      const response = await axios.post('https://practice-form-1.onrender.com/api/post', formData);
       console.log('Response data:', response.data); 
       alert('Created successfully');
       navigate('/display', { state: { formData } });
